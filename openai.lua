@@ -37,7 +37,7 @@ local payload = {
 
 hook.Add("PlayerSay", "OpenAIChat", function(ply, msg)
     local endpoint = "https://api.openai.com/v1/chat/completions"
-    local api_key = "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"
+    local api_key = "####################"
 
     payload["messages"][#payload["messages"] + 1] = { ["role"] = "user", ["content"] = msg}
 
